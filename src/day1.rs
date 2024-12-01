@@ -2,7 +2,6 @@ pub fn day1(input: String) -> (u32, u32) {
     let mut left = vec![];
     let mut right = vec![];
     let split_input: Vec<&str> = input.lines().collect();
-    dbg!(&split_input);
 
     split_input.into_iter().for_each(|line| {
         let split_line: Vec<&str> = line.split("   ").collect();
